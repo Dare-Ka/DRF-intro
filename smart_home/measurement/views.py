@@ -18,23 +18,3 @@ class SensorDetailView(RetrieveUpdateDestroyAPIView):
 class MeasurementView(ListCreateAPIView):
     queryset = Measurement.objects.all()
     serializer_class = MeasurementSerializer
-
-# class ShortSensorsInfoView(ListCreateAPIView, RetrieveUpdateDestroyAPIView):
-#     queryset = Sensor.objects.all()
-#     serializer_class = SensorSerializer
-#
-#
-# class FullSensorsInfoListView(RetrieveAPIView):
-#     queryset = Sensor.objects.all()
-#     serializer_class = SensorsSerializer
-#
-#
-# class MeasurementCreateView(RetrieveUpdateDestroyAPIView):
-#     queryset = Measurement.objects.all()
-#     serializer_class = MeasurementSerializer
-#
-#
-# class MeasurementsCreateView(ListCreateAPIView):
-#     queryset = Measurement.objects.all()
-#     serializer_class = MeasurementsSerializer
-#
